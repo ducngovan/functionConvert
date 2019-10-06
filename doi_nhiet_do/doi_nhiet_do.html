@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doi nhiet do</title>
+</head>
+<body>
+<div class="content">
+    <div><h1>Doi nhiet do</h1></div>
+    <div>
+        <span>nhap nhiet do(F): </span>
+        <input type="text" id="convert" />
+    </div>
+    <div>
+        <button type="button" onclick="convert(parseInt(document.getElementById('convert').value))">SUBMIT</button>
+    </div>
+    <div>
+        <span>nhiet do doi duoc(C): </span>
+        <input type="text" id="result"/>
+    </div>
+</div>
+
+<script>
+
+function convert (a) {
+    var a, result;
+     result = (a-32)/1.8;
+     console.log(result);
+    return result;
+}
+
+</script>
+</body>
+</html>
