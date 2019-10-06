@@ -12,11 +12,12 @@
         <input type="text" id="convert" />
     </div>
     <div>
-        <button type="button" onclick="convert(parseInt(document.getElementById('convert').value))">SUBMIT</button>
+        <button type="button" onclick="submit()">SUBMIT</button>
     </div>
     <div>
         <span>nhiet do doi duoc(C): </span>
-        <input type="text" id="result"/>
+        <input type="text" id="result" disabled/>
+
     </div>
 </div>
 
@@ -28,6 +29,10 @@ function convert (a) {
      console.log(result);
     return result;
 }
+function submit(){
+    document.getElementById('result').value = convert(parseInt(document.getElementById('convert').value));
+}
+
 
 </script>
 </body>
